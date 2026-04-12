@@ -31,7 +31,7 @@ SE_LabMidterm_Alvez/
 - **MVC Pattern** — business logic, UI, and control flow are cleanly separated
 - **Error Handling** — type validation and division by zero are handled at the model level
 - **Unit Testing** — 17 tests across 4 files covering all operations and edge cases
-- **CI/CD** — GitHub Actions pipeline runs all tests automatically on every push to `main`
+- **CI/CD** — GitHub Actions pipeline runs all tests automatically on every push to `development`
 - **Quality Analysis** — documents Functional Correctness and Fault Tolerance based on ISO/IEC 25010
 
 ## Prerequisites
@@ -74,7 +74,7 @@ python -m pytest tests/test_divide.py -v
 
 ## CI/CD
 
-This project uses GitHub Actions to automatically run the test suite on every push to `main`. The pipeline installs dependencies and runs `pytest` — if any test fails, the pipeline fails.
+This project uses GitHub Actions to automatically run the test suite on every push to `development`. The pipeline installs dependencies and runs `pytest` — if any test fails, the pipeline fails.
 
 You can view the pipeline status in the **Actions** tab of the repository.
 
